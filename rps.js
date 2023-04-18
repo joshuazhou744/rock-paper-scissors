@@ -42,3 +42,16 @@ function game() {
     playRound(player, computer);
     askContinue();
 }
+
+function createElements() {
+    const div = document.querySelector('#container');
+    div.textContent = "hello";
+    const rock = document.createElement('p');
+    rock.textContent = 'Rock';
+    rock.classList.add('rock');
+    const paper = document.createElement('button');
+    paper.classList.add('paper');
+    const scissors = document.createElement('button');
+    scissors.classList.add('scissors');
+    div.appendChild(rock, paper, scissors);
+}
